@@ -1,0 +1,82 @@
+<!doctype html>  
+<html lang="tr">  
+<head>  
+<meta charset="utf-8">  
+<meta name="viewport" content="width=device-width,initial-scale=1">  
+<title>Bir Sır...</title>  
+<style>  
+body{  
+  background:#ffeef7;  
+  color:#ff5fa2;  
+  font-family:Arial,Helvetica,sans-serif;  
+  text-align:center;  
+  padding:30px  
+}  
+.card{  
+  background:#fff;  
+  padding:22px;  
+  border-radius:18px;  
+  box-shadow:0 6px 20px rgba(0,0,0,.08);  
+  max-width:420px;  
+  margin:0 auto  
+}  
+input{  
+  padding:10px;  
+  border-radius:10px;  
+  border:1px solid #ffd1e8;  
+  font-size:16px  
+}  
+button{  
+  padding:10px 14px;  
+  border-radius:10px;  
+  border:0;  
+  background:#ff5fa2;  
+  color:#fff;  
+  font-weight:bold;  
+  cursor:pointer  
+}  
+.kitty{font-size:32px;margin-bottom:10px}  
+</style>  
+</head>  
+  
+<body>  
+  
+<div class="card" id="lock">  
+  <div class="kitty">♡ Hello Kitty ♡</div>  
+  <p>Kutunun içindeki notta yazan şifreyi gir 🎀</p>  
+  <input id="pw" placeholder="Şifre">  
+  <br><br>  
+  <button onclick="openPage()">Aç</button>  
+</div>  
+  
+<div class="card" id="content" style="display:none">  
+  <div class="kitty">♡ Hello Kitty ♡</div>  
+  <h2>Sana bir sır söylemek istiyorum...</h2>  
+  <p>  
+    Seninle konuşmak, gülmek, yazışmak<br>  
+    günümün en güzel anları oluyor.  
+  </p>  
+  <p>  
+    İyi ki tanıdım seni…<br>  
+    ve artık bunu sormak istiyorum:  
+  </p>  
+  <h2>Benimle çıkar mısın? 🤍</h2>  
+</div>  
+  
+<script>  
+const correctPassword = "06062010";  
+  
+function openPage(){  
+  const val = document.getElementById("pw").value;  
+  if(val === correctPassword){  
+    document.getElementById("lock").style.display="none";  
+    document.getElementById("content").style.display="block";  
+  }else{  
+    document.getElementById("pw").value="";  
+    document.getElementById("pw").placeholder="Yanlış şifre, tekrar dene";  
+  }  
+}  
+</script>  
+  
+</body>  
+</html>  
