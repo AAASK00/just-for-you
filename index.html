@@ -1,82 +1,72 @@
-<!doctype html>  
-<html lang="tr">  
-<head>  
-<meta charset="utf-8">  
-<meta name="viewport" content="width=device-width,initial-scale=1">  
-<title>Bir Sır...</title>  
-<style>  
-body{  
-  background:#ffeef7;  
-  color:#ff5fa2;  
-  font-family:Arial,Helvetica,sans-serif;  
-  text-align:center;  
-  padding:30px  
-}  
-.card{  
-  background:#fff;  
-  padding:22px;  
-  border-radius:18px;  
-  box-shadow:0 6px 20px rgba(0,0,0,.08);  
-  max-width:420px;  
-  margin:0 auto  
-}  
-input{  
-  padding:10px;  
-  border-radius:10px;  
-  border:1px solid #ffd1e8;  
-  font-size:16px  
-}  
-button{  
-  padding:10px 14px;  
-  border-radius:10px;  
-  border:0;  
-  background:#ff5fa2;  
-  color:#fff;  
-  font-weight:bold;  
-  cursor:pointer  
-}  
-.kitty{font-size:32px;margin-bottom:10px}  
-</style>  
-</head>  
-  
-<body>  
-  
-<div class="card" id="lock">  
-  <div class="kitty">♡ ELA GÖZLÜM ♡</div>  
-  <p>Kutunun içindeki notta yazan şifreyi gir 🎀</p>  
-  <input id="pw" placeholder="Şifre">  
-  <br><br>  
-  <button onclick="openPage()">Aç</button>  
-</div>  
-  
-<div class="card" id="content" style="display:none">  
-  <div class="kitty">♡ MEDİNEYİ ÇOK SEVİYORUM ♡</div>  
-  <h2>EMİN - MEDİNE</h2>  
-  <p>  
-    Seninle konuşmak, gülmek, yazışmak<br>  
-    günümün en güzel anları oluyor.  
-  </p>  
-  <p>  
-    İyi ki tanıdım seni…<br>  
-    ve artık bunu sormak istiyorum:  
-  </p>  
-  <h2>Benimle çıkar mısın? 🤍</h2>  
-</div>  
-  
-<script>  
-const correctPassword = "06062010";  
-  
-function openPage(){  
-  const val = document.getElementById("pw").value;  
-  if(val === correctPassword){  
-    document.getElementById("lock").style.display="none";  
-    document.getElementById("content").style.display="block";  
-  }else{  
-    document.getElementById("pw").value="";  
-    document.getElementById("pw").placeholder="Yanlış şifre, tekrar dene";  
-  }  
-}  
-</script>  
-  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dünya Kadınlar Günün Kutlu Olsun Medine'm</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff69b4;
+            padding: 20px 0;
+            font-size: 2em;
+            color: white;
+        }
+        .romantic-text {
+            margin: 20px auto;
+            font-size: 1.4em;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px;
+        }
+        .photos img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .counter {
+            font-size: 1.3em;
+            margin: 20px 0;
+            background-color: #ffe4e1;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>Dünya Kadınlar Günün Kutlu Olsun Medine'm 💖</header>
+
+    <div class="romantic-text">
+        Sevgili Medine, her zaman kalbimde özel bir yerin var.  
+        Geçmişteki hatalarım için özür diliyorum ve seni incittiğim için pişmanım.  
+        Her anımızı daha değerli kılmak, seni mutlu etmek için elimden geleni yapacağım.  
+        Seninle olmak, hayatımın en kıymetli hediyesi. 💑
+    </div>
+
+    <div class="photos">
+        <img src="medine1.jpg" alt="Medine Fotoğrafı">
+        <img src="emin1.jpg" alt="Emin Fotoğrafı">
+        <img src="birlikte.jpg" alt="Bizim Fotoğrafımız">
+    </div>
+
+    <div class="counter">
+        Tanıştığımız
